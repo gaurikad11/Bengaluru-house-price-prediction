@@ -1,12 +1,18 @@
 /* styles.css */
-body {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/static/images/image.png); /* Ensure the path is correct */
-  background-size: cover; /* Make the background image cover the entire viewport */
-  background-repeat: no-repeat; /* Prevent the background from repeating */
-  background-position: center; /* Center the image */
-  font-family: 'Roboto', sans-serif; /* Default font */
+html, body {
+  height: 100%; /* Ensure the entire page height is covered */
   margin: 0;
   padding: 0;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/static/images/image.png);
+  background-size: cover; /* Make the background image cover the entire viewport */
+  background-repeat: no-repeat; /* Prevent repeating */
+  background-attachment: fixed; /* Make sure the background stays in place on scroll */
+  background-position: center; /* Center the image */
+  min-height: 100vh; /* Ensure it covers the viewport even if the content is small */
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -50,17 +56,19 @@ h1 {
   border-radius: 8px; /* Slightly rounded corners */
   border: none; /* Remove default border */
   font-family: 'Arial', sans-serif;
-  margin-bottom: 40px; /* Add a bottom margin to ensure spacing between card and footer */
+  margin-bottom: 150px; /* Add a bottom margin to ensure spacing between card and footer */
   color: #434242;
   text-align: center;
   overflow: visible !important; /* Ensure the dropdown is not clipped */
 }
 .container {
     overflow: visible !important; /* Ensure dropdown is not constrained */
+    padding: 20px; /* Add padding for spacing */
+    flex-grow: 1; /* Allow container to grow and adjust based on content */
 }
 
 
-}
+
 
 /* Style for input boxes and dropdown */
 .form-control,
@@ -105,9 +113,6 @@ h1 {
 /* Footer Styles */
 /* Ensure the HTML and body fill the viewport */
 html, body {
-  height: 100%;
-  margin: 0; /* Remove default margins */
-  padding: 0; /* Remove default padding */
   display: flex;
   flex-direction: column; /* Stack elements vertically */
 }
