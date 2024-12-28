@@ -1,4 +1,5 @@
 The Bengaluru House Price Prediction website allows users to estimate house prices in Bengaluru based on input parameters such as area, number of rooms (BHK), bathrooms, and location.
+
 Technologies Used
  -Frontend: HTML5, CSS3, Bootstrap
  -Backend: Flask (or relevant backend framework)
