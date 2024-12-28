@@ -3,6 +3,8 @@ html, body {
   height: 100%; /* Ensure the entire page height is covered */
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
 }
 
 body {
@@ -40,13 +42,12 @@ body {
 }
 
 
-
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   color: #FAFAFA;
 }
-/* styles.css */
+
 
 /* Style for the card */
 .card {
@@ -66,9 +67,6 @@ h1 {
     padding: 20px; /* Add padding for spacing */
     flex-grow: 1; /* Allow container to grow and adjust based on content */
 }
-
-
-
 
 /* Style for input boxes and dropdown */
 .form-control,
@@ -107,15 +105,7 @@ h1 {
   border: 1px solid #dcdcdc; /* Subtle border */
   border-color: #797777;
 }
-/* styles.css */
 
-/* Footer Styling */
-/* Footer Styles */
-/* Ensure the HTML and body fill the viewport */
-html, body {
-  display: flex;
-  flex-direction: column; /* Stack elements vertically */
-}
 
 /* Main content should expand to fill available space */
 main {
@@ -123,8 +113,6 @@ main {
 }
 
 /* Footer styles */
-
-
 footer {
   background-color: #343a40; /* Dark background color */
   color: white; /* White text color */
