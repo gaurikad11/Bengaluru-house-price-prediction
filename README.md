@@ -2,8 +2,12 @@ The Bengaluru House Price Prediction website allows users to estimate house pric
 
 Technologies Used:
 
- -Frontend: HTML5, CSS3, Bootstrap
- -Backend: Flask (or relevant backend framework)
- -Database: SQLite/MySQL for location and prediction data storage
- -Machine Learning: Pre-trained regression models for price prediction
+ -Frontend: HTML, CSS, Bootstrap
+ 
+ -Backend: Flask 
+ 
+ -Database: MySQL 
+ 
+ -Machine Learning: Linear regression model for price prediction
+ 
  -Deployment: Hosted on (e.g., AWS/Heroku)
